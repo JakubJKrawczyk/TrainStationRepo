@@ -21,7 +21,7 @@ import Global = WebAssembly.Global
   </template>
 
 </template>
-
+<!--ha-->
 <style scoped>
 
 </style>
