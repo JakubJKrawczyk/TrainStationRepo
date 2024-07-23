@@ -1,0 +1,80 @@
+.segment{
+    width: 80vw;
+    height: 50vh;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20vh;
+    text-align: center;
+}
+
+.segment h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+    user-select: none;
+}
+.stations-button{
+    width: 150px;
+    height: 30px;
+    margin-right: auto;
+    margin-left: 70vw;
+    margin-bottom: 50px;
+
+}
+.inputs{
+    width: 75%;
+    height: 50px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.inputs input{
+    height: 50px;
+    width: 500px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left:15px
+}
+.inputs input:first-of-type{
+    margin-right: 20px;
+}
+
+.segment #SearchRouteBtn{
+    width: 200px;
+    height: 50px;
+    margin-top: 40px;
+    font-size: 25px;
+    color:white;
+    background-color: #4D4DFF;
+    box-shadow: #40A4FF 0 0 5px;
+    border: none;
+    cursor: pointer;
+}
+.segment .stations-button{
+    background: none;
+    border: none;
+    height: 50px;
+    width:200px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: center;
+
+}
+
+.segment .stations-button span{
+    transition:0.1s;
+    color: white;
+    font-size:25px;
+    cursor: pointer;
+}
+.segment .stations-button span:hover{
+     text-shadow: #ffffff 0 0 8px;
+ }
+
+.segment .stations-button img{
+    width:30px;
+    height:30px;
+    fill: white;
+    margin-top: 10px;
+    float:left;
+    margin-left: 30px;
+}
+
