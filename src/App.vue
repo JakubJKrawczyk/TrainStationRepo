@@ -2,16 +2,26 @@
 import StationsList from '@/components/StationsList.vue'
 import ResultSegment from '@/components/ResultSegment.vue'
 import SearchSegment from '@/components/SearchSegment.vue'
+
+
 </script>
 
 <template>
   <main>
-    <component id="segmentContainer" @change-component="SetCurrentComponent" :is="currentComponent"></component>
-
+    <button v-if="currentComponentName == 'SearchSegment'" v-on:click="authors" class="back-button">Authors</button>
+    <component
+      id="segmentContainer"
+      @change-component="SetCurrentComponent"
+      :is="currentComponent"
+    ></component>
   </main>
+  <footer>
+    Dane na podstawie regulaminu sieci PKP PLK 2023/24 (<a href="https://www.plk-sa.pl/klienci-i-kontrahenci/warunki-udostepniania-infrastruktury-i-regulaminy/regulamin-sieci/regulamin-sieci-2023/2024">link</a>)
+  </footer>
 </template>
 
 <style scoped>
+
 header {
   line-height: 1.5;
 }
@@ -40,36 +50,36 @@ header {
 </style>
 
 <script lang="ts">
-
+import AuthorsComponent from '@/components/AuthorsComponent.vue'
 
 export default {
-    components: {
-      SearchSegment,
-      ResultSegment,
-      StationsList,
-    },
-    data() {
+  components: {
+    SearchSegment,
+    ResultSegment,
+    StationsList
+  },
+  data() {
+    return {
+      currentComponentName: 'SearchSegment'
+    }
+  },
+  computed: {
+    currentComponent() {
       return {
-        currentComponentName: 'SearchSegment',
-      }
+        SearchSegment: SearchSegment,
+        ResultSegment: ResultSegment,
+        StationsList: StationsList,
+        AuthorsComponent: AuthorsComponent
+      }[this.currentComponentName]
+    }
+  },
+  methods: {
+    SetCurrentComponent(currentComponentName: string) {
+      this.currentComponentName = currentComponentName
     },
-    computed: {
-      currentComponent() {
-        return {
-          'SearchSegment': SearchSegment,
-          'ResultSegment': ResultSegment,
-          'StationsList': StationsList
-        }[this.currentComponentName];
-      }
-    },
-  methods:{
-      SetCurrentComponent(currentComponentName: string) {
-        this.currentComponentName = currentComponentName;
-      }
+    authors(){
+      this.SetCurrentComponent("AuthorsComponent")
+    }
   }
-
-
-  }
-
+}
 </script>
-

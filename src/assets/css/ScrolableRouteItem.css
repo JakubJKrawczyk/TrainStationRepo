@@ -1,99 +1,83 @@
-.routes-header{
-    width: 200px;
-    margin: 50px auto;
-    text-align: center;
-}
-.lamps{
-    width:80vh;
-    height:40px;
-}
-.lamp{
-    width: 40px;
-    height: 10px;
-    background:#848484;
-    margin-bottom:40px;
-    position:relative;
-    box-shadow: #baba41 0 10px 6px 1px;
-    float: left;
-    transform: perspective(10px) rotateX(20deg);
+.routes-header {
+  width: 200px;
+  margin: 50px auto;
+  text-align: center;
 }
 
-.route-item-container{
-    width:80vw;
-    height:100px;
-    overflow: auto;
-    max-height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    color:black;
-    margin-bottom: 120px;
-    animation-name: move-in;
-    animation-duration: 1s;
-    animation-play-state: initial;
-    transform: translateX(-150%);
-    animation-fill-mode: forwards;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-
+.route-item-container {
+  width: 80vw;
+  height: 100px;
+  overflow: auto;
+  max-height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  margin-bottom: 120px;
+  animation-name: move-in;
+  animation-duration: 1s;
+  animation-play-state: initial;
+  transform: translateX(-150%);
+  animation-fill-mode: forwards;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
-.route-item{
-    max-height: 100px;
-    white-space: nowrap;
-    margin-top:20px;
+.route-item {
+  max-height: 100px;
+  white-space: nowrap;
+  margin-top: 20px;
 }
-.station-name-container{
-    display:inline-flex;
-    float:none;
-    white-space: nowrap;
-    text-overflow:ellipsis;
-    overflow: hidden;
-    scrollbar-base-color: black;
-    font-size: 20px;
-    user-select: none;
+.station-name-container {
+  display: inline-flex;
+  float: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  scrollbar-base-color: black;
+  font-size: 20px;
+  user-select: none;
 }
-.station-name{
-    line-height: 40px;
-    margin: 0 20px;
-    height: 50px;
-    background: #3b7eff;
-    color: white;
-    padding:5px;
-    border-radius: 10px;
+.station-name {
+  line-height: 40px;
+  margin: 0 20px;
+  height: 50px;
+  background: #3b7eff;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
 }
-.separator{
-    line-height: 50px;
-    color:white;
+.separator {
+  line-height: 50px;
+  color: white;
 }
-.start-station{
-    background: #00fe00;
-    font-weight: bold;
-
+.start-station {
+  background: #00fe00;
+  font-weight: bold;
 }
-.end-station{
-    background: #fe0000;
-    font-weight: bold;
+.end-station {
+  background: #fe0000;
+  font-weight: bold;
 }
 
 .scroll-content {
-    animation: scroll-horizontal normal paused;
+  animation: scroll-horizontal normal paused;
 }
 
 @keyframes scroll-horizontal {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 @keyframes move-in {
-    0%{
-        transform: translateX(-150%);
-    }
-    100%{
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

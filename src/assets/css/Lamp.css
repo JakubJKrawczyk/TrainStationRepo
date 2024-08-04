@@ -1,0 +1,14 @@
+.lamps {
+  width: 80vh;
+  height: 40px;
+}
+.lamp {
+  width: 40px;
+  height: 10px;
+  background: #848484;
+  margin-bottom: 40px;
+  position: relative;
+  box-shadow: #baba41 0 10px 6px 1px;
+  float: left;
+  transform: perspective(10px) rotateX(20deg);
+}
