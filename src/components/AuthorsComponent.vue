@@ -10,7 +10,7 @@
   <h1>Project Authors</h1>
 
   <div class="authorBox">
-    <h2>X Y (jak mi odpisze dam znać)</h2>
+    <h2>Szymon Drogosz</h2>
     <h3>Rola: <span class="green">Dostawca danych</span></h3>
     <h3>Kontakt:</h3>
     <h3>Discord: <span class="green">random_username6913</span></h3>
