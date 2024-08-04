@@ -7,7 +7,7 @@ export class ApiController {
 
   constructor() {
     this.client = axios.create({
-      baseURL: import.meta.env.VITE_APP_API_URL??'http://localhost:5065',
+      baseURL: '/api',
       timeout: 1000
     })
   }
