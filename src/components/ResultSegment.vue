@@ -6,7 +6,7 @@ import TooltipComponent from '@/components/TooltipComponent.vue'
 import { nextTick, onMounted, onUnmounted, ref } from 'vue'
 
 //tooltip props
-let isShow = ref(true)
+let isShow = ref(false)
 let X = ref(0.0)
 let Y = ref(0.0)
 let correctPos = ref(0.0)

@@ -8,32 +8,33 @@
 }
 
 .segment h1 {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-size: 50px;
   user-select: none;
 }
 .stations-button {
+  position:absolute;
+  right:50px;
+  top:40px;
   width: 150px;
   height: 30px;
-  margin-right: auto;
-  margin-left: 70vw;
-  margin-bottom: 50px;
 }
 .inputs {
-  width: 75%;
+  width: 80vw;
   height: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 .inputs input {
   height: 50px;
-  width: 500px;
+  width: 30vw;
+  min-width: 300px;
   border-radius: 5px;
   font-size: 18px;
   padding-left: 15px;
 }
-.inputs input:first-of-type {
-  margin-right: 20px;
+.inputs input:nth-of-type(2) {
+  margin-left: 2vw;
 }
 
 .segment #SearchRouteBtn {
@@ -74,4 +75,18 @@
   margin-top: 10px;
   float: left;
   margin-left: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .inputs input:nth-of-type(2) {
+    margin-left: 0;
+    margin-top:10px;
+  }
+  .segment #SearchRouteBtn {
+    margin-top: 70px;
+  }
+  .segment h1{
+    font-size:30px;
+  }
 }

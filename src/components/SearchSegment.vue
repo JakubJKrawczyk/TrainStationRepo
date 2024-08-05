@@ -84,10 +84,9 @@ export default {
     handleSearch: async function handleSearch() {
       let i1 = (document.getElementById('startStationInput') as HTMLInputElement).value
       let i2 = (document.getElementById('endStationInput') as HTMLInputElement).value
-      if(i1 == "" && i2 == ""){
-        document.getElementById("warning")!.innerHTML = `Conajmniej jedno pole musi być wypełnione`;
-        return
-      }
+
+      if(i1 == "") i1 = "Bielsko-Biała Główna";
+      if(i2 == "") i2 = "Warszawa Zachodnia"
       let s1: StationModel,s2: StationModel = new StationModel(-1, "none", "none");
       try{
         s1 = await this.controller.getStationByName(i1)

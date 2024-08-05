@@ -1,11 +1,12 @@
 .stations-list-header {
   width: 100%;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
 }
-.stations-list-backButton {
-  position: fixed;
-  left: 5vw;
+.back-button {
+  position: absolute;
+  left: 30px;
+  top:30px;
 }
 #stations-list-h1 {
   margin-bottom: 50px;
@@ -66,4 +67,17 @@
   font-size: calc(100%);
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+@media only screen and (max-width:1024px){
+  .stations-list-item{
+    width: 80vw;
+    height: 120px;
+    line-height: 60px;
+  }
+
+  .stations-list-discriminant{
+    width:40%;
+    height: 70px;
+  }
 }

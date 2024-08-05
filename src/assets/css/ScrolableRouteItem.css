@@ -37,13 +37,15 @@
   user-select: none;
 }
 .station-name {
-  line-height: 40px;
+  line-height: 30px;
   margin: 0 20px;
   height: 50px;
   background: #3b7eff;
   color: white;
   padding: 5px;
   border-radius: 10px;
+  border:5px dotted whitesmoke;
+
 }
 .separator {
   line-height: 50px;

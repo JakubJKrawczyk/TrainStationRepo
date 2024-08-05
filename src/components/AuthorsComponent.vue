@@ -41,7 +41,7 @@
 <style scoped>
 #authorsDiv{
   width: 50vw;
-  height: 110vh;
+  height: 120vh;
   margin-left: auto;
   margin-right: auto;
   margin-top:20px;
@@ -55,9 +55,11 @@
   margin-top:30px;
   text-align:center;
 }
+
+
 #authorsDiv h1{
   display: block;
-  width:30%;
+  width:50vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -66,6 +68,26 @@
 }
 #authorsDiv h3{
   margin-top:10px;
+}
+
+@media only screen and (max-width:1024px){
+  .authorBox h1{
+    font-size:24px;
+  }
+
+  .authorBox h2{
+    font-size:20px;
+  }
+
+  .authorBox h3{
+    font-size:16px;
+  }
+
+  .back-button{
+    position:absolute;
+    left:40px;
+    top:40px;
+  }
 }
 </style>
 
