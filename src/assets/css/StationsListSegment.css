@@ -59,9 +59,9 @@
   float: right;
   margin-right: 30px;
   padding: 5px;
-  width: 50%;
+  width: 48%;
   height: 40px;
-  color: black;
+  color: white;
   font-weight: bold !important;
   border-radius: 5px;
   font-size: calc(100%);
@@ -71,13 +71,22 @@
 
 @media only screen and (max-width:1024px){
   .stations-list-item{
-    width: 80vw;
-    height: 120px;
+    width: 70vw;
+    height: 140px;
     line-height: 60px;
   }
-
+  .stations-list-itempart{
+    float:none;
+  }
   .stations-list-discriminant{
     width:40%;
     height: 70px;
+  }
+  .stations-list-name{
+    width:100%;
+    font-size:18px;
+  }
+  .stations-list-discriminant{
+    width:100%;
   }
 }

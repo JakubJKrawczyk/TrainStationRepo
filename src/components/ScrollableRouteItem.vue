@@ -4,13 +4,14 @@ import { onMounted, onUnmounted, ref } from 'vue'
 const routeItemContainer = ref<HTMLElement | null>(null)
 let animationId: number | null = null
 let isPaused = false
+let animationFrame: number | null = 0
 
 const startAnimation = () => {
   if (!routeItemContainer.value) return
 
   const container = routeItemContainer.value
   const maxScrollLeft = container.scrollWidth - container.clientWidth
-  container.scrollLeft = 0
+
   animationId = requestAnimationFrame(() => scroll(container, maxScrollLeft))
 }
 
@@ -29,7 +30,11 @@ const scroll = (container: HTMLElement, maxScrollLeft: number) => {
 const pauseAnimation = () => {
   isPaused = true
   if (animationId !== null) {
+    if(!routeItemContainer.value) return
+    let container = routeItemContainer.value;
+    animationFrame = container.scrollLeft;
     cancelAnimationFrame(animationId)
+
   }
 }
 
@@ -67,9 +72,9 @@ onUnmounted(() => {
     v-if="$props.route !== undefined && Array.isArray($props.route)"
   >
     <div class="route-item scroll-content">
-      <div v-for="index in $props.route.length" :key="index" class="station-name-container">
+      <div v-for="index in $props.route.length" :key="index" class="station-name-container" :style="`line-height: ${(GlobalConst.DiscriminantsLegend[$props.route[index-1].discriminant].border != 'none' ? 24 : 34)}px; `">
         <span
-          :style="`background: ${GlobalConst.DiscriminantsLegend[$props.route[index - 1].discriminant].color}`"
+          :style="`${(GlobalConst.DiscriminantsLegend[$props.route[index-1].discriminant].border != 'none' ? `border: 5px ${GlobalConst.DiscriminantsLegend[$props.route[index-1].discriminant].border} white;` : '')} background: ${GlobalConst.DiscriminantsLegend[$props.route[index - 1].discriminant].color}`"
           :class="`station-name ${index - 1 === 0 ? 'start-station' : index - 1 === $props.route.length - 1 ? 'end-station' : ''}`"
         >
           {{ $props.route[index - 1].name }}

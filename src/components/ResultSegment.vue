@@ -58,7 +58,7 @@ onUnmounted(() => {
   <h1 class="routes-header">Routes List</h1>
 
   <template v-for="index in GlobalConst.Routes.routes.length" :key="index">
-    <LampComponent :count="3" :space="23.3"></LampComponent>
+    <LampComponent  :count="3" :space="23.3"></LampComponent>
 
     <ScrollableRouteItem :delay="index * 0.2" :route="GlobalConst.Routes.routes[index - 1]" />
   </template>

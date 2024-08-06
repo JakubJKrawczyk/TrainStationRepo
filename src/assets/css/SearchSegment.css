@@ -14,8 +14,8 @@
 }
 .stations-button {
   position:absolute;
-  right:50px;
-  top:40px;
+  right:20px;
+  top:20px;
   width: 150px;
   height: 30px;
 }
@@ -88,5 +88,8 @@
   }
   .segment h1{
     font-size:30px;
+  }
+  .inputs{
+    height:120px;
   }
 }
