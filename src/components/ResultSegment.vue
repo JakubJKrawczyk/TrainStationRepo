@@ -20,16 +20,14 @@ const showToolTip = async (sender: HTMLElement) => {
   Y.value = sender.getBoundingClientRect().top - 30
   isShow.value = true
   await nextTick()
-    let tt = document.getElementsByClassName("tooltip")[0];
-    if(tt){
-      correctPos.value = (sender.clientWidth - tt.clientWidth)/2;
-    }
-
-
+  let tt = document.getElementsByClassName('tooltip')[0]
+  if (tt) {
+    correctPos.value = (sender.clientWidth - tt.clientWidth) / 2
+  }
 }
 
 const hideToolTip = () => {
-  correctPos.value = 0.0;
+  correctPos.value = 0.0
   isShow.value = false
 }
 
@@ -54,11 +52,11 @@ onUnmounted(() => {
 </script>
 
 <template class="Results">
-  <button class="back-button" v-on:click="back">Back</button>
-  <h1 class="routes-header">Routes List</h1>
+  <button class="back-button" v-on:click="back">Powrót</button>
+  <h1 class="routes-header">Lista połączeń</h1>
 
   <template v-for="index in GlobalConst.Routes.routes.length" :key="index">
-    <LampComponent  :count="3" :space="23.3"></LampComponent>
+    <LampComponent :count="3" :space="23.3"></LampComponent>
 
     <ScrollableRouteItem :delay="index * 0.2" :route="GlobalConst.Routes.routes[index - 1]" />
   </template>
@@ -67,7 +65,7 @@ onUnmounted(() => {
     :positionX="X"
     :positionY="Y"
     :message="Message"
-    :correctPos=correctPos
+    :correctPos="correctPos"
   ></TooltipComponent>
 </template>
 

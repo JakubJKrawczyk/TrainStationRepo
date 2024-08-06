@@ -2,13 +2,13 @@
 import StationsList from '@/components/StationsList.vue'
 import ResultSegment from '@/components/ResultSegment.vue'
 import SearchSegment from '@/components/SearchSegment.vue'
-
-
 </script>
 
 <template>
   <main>
-    <button v-if="currentComponentName == 'SearchSegment'" v-on:click="authors" class="back-button">Authors</button>
+    <button v-if="currentComponentName == 'SearchSegment'" v-on:click="authors" class="back-button">
+      Autorzy
+    </button>
     <component
       id="segmentContainer"
       @change-component="SetCurrentComponent"
@@ -16,12 +16,14 @@ import SearchSegment from '@/components/SearchSegment.vue'
     ></component>
   </main>
   <footer>
-    Dane na podstawie regulaminu sieci PKP PLK 2023/24 (<a href="https://www.plk-sa.pl/klienci-i-kontrahenci/warunki-udostepniania-infrastruktury-i-regulaminy/regulamin-sieci/regulamin-sieci-2023/2024">link</a>)
+    Dane na podstawie regulaminu sieci PKP PLK 2023/24 (<a
+      href="https://www.plk-sa.pl/klienci-i-kontrahenci/warunki-udostepniania-infrastruktury-i-regulaminy/regulamin-sieci/regulamin-sieci-2023/2024"
+      >link</a
+    >)
   </footer>
 </template>
 
 <style scoped>
-
 header {
   line-height: 1.5;
 }
@@ -77,8 +79,8 @@ export default {
     SetCurrentComponent(currentComponentName: string) {
       this.currentComponentName = currentComponentName
     },
-    authors(){
-      this.SetCurrentComponent("AuthorsComponent")
+    authors() {
+      this.SetCurrentComponent('AuthorsComponent')
     }
   }
 }

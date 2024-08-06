@@ -1,6 +1,6 @@
 {
-  "name": "trains_front",
-  "version": "0.0.0",
+  "name": "isedrpl_front",
+  "version": "1.0.0",
   "private": false,
   "type": "module",
   "scripts": {

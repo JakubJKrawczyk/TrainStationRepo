@@ -13,9 +13,8 @@
   transform: perspective(10px) rotateX(20deg);
 }
 
-
 @media only screen and (max-device-width: 1024px) {
-  .lamps{
+  .lamps {
     visibility: hidden;
   }
 }

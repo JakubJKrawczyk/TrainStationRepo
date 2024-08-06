@@ -7,7 +7,7 @@
       zIndex: 999,
       left: `${positionX}px`,
       top: `${positionY}px`,
-      transform: `translateX(${correctPos}px)`,
+      transform: `translateX(${correctPos}px)`
     }"
   >
     {{ message }}

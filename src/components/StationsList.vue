@@ -6,7 +6,7 @@ import LampComponent from '@/components/LampComponent.vue'
 <template>
   <header class="stations-list-header">
     <button class="back-button" v-on:click="back">Back</button>
-    <h1 id="stations-list-h1">List Of Stations</h1>
+    <h1 id="stations-list-h1">Lista stacjii</h1>
   </header>
   <template v-if="$data.stations.length != 0">
     <template v-for="station in $data.stations" :key="station.id">
@@ -15,7 +15,7 @@ import LampComponent from '@/components/LampComponent.vue'
   </template>
   <template v-else>
     <div :style="`text-align:center`">
-      <h1>Loading...</h1>
+      <h1>Wczytywanie...</h1>
     </div>
   </template>
 </template>

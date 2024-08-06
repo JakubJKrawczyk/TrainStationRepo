@@ -25,7 +25,6 @@
   max-height: 100px;
   white-space: nowrap;
   margin-top: 20px;
-
 }
 .station-name-container {
   display: inline-flex;
@@ -37,7 +36,6 @@
   font-size: 20px;
   user-select: none;
   animation-iteration-count: infinite;
-
 }
 .station-name {
   margin: 0 20px;
@@ -46,8 +44,6 @@
   color: white;
   padding: 5px;
   border-radius: 10px;
-
-
 }
 .separator {
   line-height: 50px;
@@ -86,12 +82,11 @@
   }
 }
 
-@media only screen and (max-width: 1024px)
-{
-  .route-item-container{
+@media only screen and (max-width: 1024px) {
+  .route-item-container {
     margin-bottom: 10px;
   }
-  .routes-header{
+  .routes-header {
     margin: 100px auto 0 auto;
   }
 }

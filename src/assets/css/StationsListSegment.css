@@ -6,7 +6,7 @@
 .back-button {
   position: absolute;
   left: 30px;
-  top:30px;
+  top: 30px;
 }
 #stations-list-h1 {
   margin-bottom: 50px;
@@ -69,24 +69,24 @@
   overflow-y: hidden;
 }
 
-@media only screen and (max-width:1024px){
-  .stations-list-item{
+@media only screen and (max-width: 1024px) {
+  .stations-list-item {
     width: 70vw;
     height: 140px;
     line-height: 60px;
   }
-  .stations-list-itempart{
-    float:none;
+  .stations-list-itempart {
+    float: none;
   }
-  .stations-list-discriminant{
-    width:40%;
+  .stations-list-discriminant {
+    width: 40%;
     height: 70px;
   }
-  .stations-list-name{
-    width:100%;
-    font-size:18px;
+  .stations-list-name {
+    width: 100%;
+    font-size: 18px;
   }
-  .stations-list-discriminant{
-    width:100%;
+  .stations-list-discriminant {
+    width: 100%;
   }
 }

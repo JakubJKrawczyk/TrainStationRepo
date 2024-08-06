@@ -5,7 +5,7 @@ import TooltipComponent from '@/components/TooltipComponent.vue'
 <template>
   <div class="segment">
     <button class="stations-button" v-on:click="showStationsList">
-      <img src="@/assets/icons/station-white.svg" /> <span>stations &#8594;</span>
+      <img src="@/assets/icons/station-white.svg" /> <span>Stacje &#8594;</span>
     </button>
     <h1>Znajdź połączenie</h1>
     <div class="inputs">
@@ -48,10 +48,9 @@ import TooltipComponent from '@/components/TooltipComponent.vue'
         </template>
       </datalist>
     </div>
-    <span style="color:red;" id="warning"></span><br>
+    <span style="color: red" id="warning"></span><br />
     <button id="SearchRouteBtn" v-on:click="handleSearch()">Szukaj</button>
   </div>
-  <tooltip-component></tooltip-component>
 </template>
 
 <style scoped></style>
@@ -85,17 +84,18 @@ export default {
       let i1 = (document.getElementById('startStationInput') as HTMLInputElement).value
       let i2 = (document.getElementById('endStationInput') as HTMLInputElement).value
 
-      if(i1 == "") i1 = "Bielsko-Biała Główna";
-      if(i2 == "") i2 = "Warszawa Zachodnia"
-      let s1: StationModel,s2: StationModel = new StationModel(-1, "none", "none");
-      try{
+      if (i1 == '') i1 = 'Bielsko-Biała Główna'
+      if (i2 == '') i2 = 'Warszawa Zachodnia'
+      let s1: StationModel,
+        s2: StationModel = new StationModel(-1, 'none', 'none')
+      try {
         s1 = await this.controller.getStationByName(i1)
         s2 = await this.controller.getStationByName(i2)
-      }catch(error){
-        document.getElementById("warning")!.innerHTML = `Nie znaleziono wyników dla podanych stacji: ${i1} i ${i2}`;
-      return
+      } catch (error) {
+        document.getElementById('warning')!.innerHTML =
+          `Nie znaleziono wyników dla podanych stacji: ${i1} i ${i2}`
+        return
       }
-
 
       GlobalConst.Routes = await this.controller.fetchRoutes(s1.id, s2.id)
       this.$emit('change-component', 'ResultSegment')

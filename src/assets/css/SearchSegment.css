@@ -13,9 +13,9 @@
   user-select: none;
 }
 .stations-button {
-  position:absolute;
-  right:20px;
-  top:20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
   width: 150px;
   height: 30px;
 }
@@ -78,18 +78,17 @@
 }
 
 @media only screen and (max-width: 1024px) {
-
   .inputs input:nth-of-type(2) {
     margin-left: 0;
-    margin-top:10px;
+    margin-top: 10px;
   }
   .segment #SearchRouteBtn {
     margin-top: 70px;
   }
-  .segment h1{
-    font-size:30px;
+  .segment h1 {
+    font-size: 30px;
   }
-  .inputs{
-    height:120px;
+  .inputs {
+    height: 120px;
   }
 }
