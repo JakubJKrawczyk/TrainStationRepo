@@ -8,7 +8,7 @@ export class ApiController {
 
   constructor() {
     this.client = axios.create({
-      baseURL: 'http://localhost:8080',
+      baseURL: '/api',
       timeout: 1000
 
     })
@@ -16,7 +16,7 @@ export class ApiController {
 
   public async fetchStations(query: string): Promise<Stations> {
     let response: Stations = new Stations([]);
-    let requestUrl = '/stations'
+    const requestUrl = '/stations'
     await this.client
       .get<Stations>(requestUrl, {
         params: { query: query }
@@ -41,7 +41,7 @@ export class ApiController {
 
   public async fetchRoutes(start: number, end: number): Promise<RoutesModel> {
     let routes: RoutesModel = new RoutesModel([[]])
-    let requestUrl = '/route'
+    const requestUrl = '/route'
     await this.client.post<RoutesModel>(requestUrl, { stations: [start, end] }).then((r) => {
       routes =  r.data
     }).catch((error) => {
