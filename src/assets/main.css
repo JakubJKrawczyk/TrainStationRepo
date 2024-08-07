@@ -18,6 +18,7 @@ footer {
   background: #181818;
 }
 .arrow{
+  text-align: center;
   font-size: 20px;
   width:50px;
   font-weight: bold;
