@@ -3,6 +3,19 @@ import StationsList from '@/components/StationsList.vue'
 import ResultSegment from '@/components/ResultSegment.vue'
 import SearchSegment from '@/components/SearchSegment.vue'
 import PrivacyPolicyPopupSegment from '@/components/PrivacyPolicyPopupSegment.vue'
+
+window.onerror = function(message, source, lineno, colno, error) {
+  console.error(`Błąd: ${message} w ${source} na linii ${lineno}, kolumnie ${colno}`);
+  window.location.href = '/error';
+  return true;
+};
+
+window.addEventListener('unhandledrejection', function(event) {
+  console.error(`Nieobsłużony błąd w Promise: ${event.reason}`);
+  window.location.href = '/error';
+  event.preventDefault();
+});
+
 </script>
 
 <template>
