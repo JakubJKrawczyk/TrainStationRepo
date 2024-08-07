@@ -7,27 +7,33 @@
 
     <div class="authorBox">
       <h2>Szymon Drogosz</h2>
-      <h3>Rola: <span class="green">Dostawca danych</span></h3>
+      <h3><span class="green">Dane</span></h3>
       <h3>Kontakt:</h3>
       <h3>Discord: <span class="green">random_username6913</span></h3>
     </div>
     <div class="authorBox">
       <h2>Jakub Krawczyk</h2>
-      <h3>Rola: <span class="green">Front-End</span></h3>
+      <h3><span class="green">Front-End</span></h3>
       <h3>Kontakt:</h3>
       <h3>Discord: <span class="green">jakubjkrawczyk</span></h3>
     </div>
     <div class="authorBox">
-      <h3>Łukasz Mastalerz</h3>
-      <h3>Rola: <span class="green">Back-End</span></h3>
+      <h2>Łukasz Mastalerz</h2>
+      <h3><span class="green">Back-End</span></h3>
       <h3>Kontakt:</h3>
       <h3>Discord: <span class="green">lakasabasz</span></h3>
     </div>
     <div class="authorBox">
       <h2>Marcel Gańczarczyk</h2>
-      <h3>Rola: <span class="green">hosting i przyjazny GPT-6</span></h3>
+      <h3>Rola: <span class="green">hosting i GPT-6</span></h3>
       <h3>Kontakt:</h3>
       <h3>Discord: <span class="green">themultii</span></h3>
+    </div>
+    <div class="authorBox">
+      <h2>dr Łukasz Więcław</h2>
+      <h3><span class="green">Logo</span></h3>
+      <h3>Kontakt:</h3>
+      <h3>E-mail: <span class="green"><a class="green" href="mailto:lwieclaw@ubb.edu.pl">lwieclaw@ubb.edu.pl</a></span></h3>
     </div>
   </div>
 </template>

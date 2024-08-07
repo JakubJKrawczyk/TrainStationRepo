@@ -29,7 +29,7 @@ window.addEventListener('unhandledrejection', function(event) {
       :is="currentComponent"
     ></component>
   </main>
-  <PrivacyPolicyPopupSegment></PrivacyPolicyPopupSegment>
+<!--  <PrivacyPolicyPopupSegment></PrivacyPolicyPopupSegment>-->
   <footer>
     Dane na podstawie regulaminu sieci PKP PLK 2023/24 (<a
       href="https://www.plk-sa.pl/klienci-i-kontrahenci/warunki-udostepniania-infrastruktury-i-regulaminy/regulamin-sieci/regulamin-sieci-2023/2024"

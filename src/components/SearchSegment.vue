@@ -14,7 +14,7 @@ import TooltipComponent from '@/components/TooltipComponent.vue'
         list="start-stations"
 
         type="text"
-        placeholder="Stacja początkowa..."
+        placeholder="Bielsko Biała Główna"
         v-on:input="setStartStation($event.target as HTMLInputElement)"
       />
       <datalist id="start-stations">
@@ -33,7 +33,7 @@ import TooltipComponent from '@/components/TooltipComponent.vue'
         id="endStationInput"
         list="end-stations"
         type="text"
-        placeholder="Stacja końcowa..."
+        placeholder="Warszawa Zachodnia"
         v-on:input="setEndStation($event.target as HTMLInputElement)"
       />
       <datalist id="end-stations">
