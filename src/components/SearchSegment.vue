@@ -30,7 +30,7 @@ import TooltipComponent from '@/components/TooltipComponent.vue'
         </template>
       </datalist>
       <span class="arrow">
-      ->
+      →
       </span>
       <input
         id="endStationInput"
