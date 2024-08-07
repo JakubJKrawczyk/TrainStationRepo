@@ -29,6 +29,7 @@ import TooltipComponent from '@/components/TooltipComponent.vue'
           </option>
         </template>
       </datalist>
+      ->
       <input
         id="endStationInput"
         list="end-stations"
