@@ -17,7 +17,11 @@ footer {
   text-align: center;
   background: #181818;
 }
-
+.arrow{
+  font-size: 20px;
+  width:50px;
+  font-weight: bold;
+}
 a,
 .green {
   text-decoration: none;
