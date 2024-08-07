@@ -2,6 +2,7 @@
 import StationsList from '@/components/StationsList.vue'
 import ResultSegment from '@/components/ResultSegment.vue'
 import SearchSegment from '@/components/SearchSegment.vue'
+import PrivacyPolicyPopupSegment from '@/components/PrivacyPolicyPopupSegment.vue'
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import SearchSegment from '@/components/SearchSegment.vue'
       :is="currentComponent"
     ></component>
   </main>
+  <PrivacyPolicyPopupSegment></PrivacyPolicyPopupSegment>
   <footer>
     Dane na podstawie regulaminu sieci PKP PLK 2023/24 (<a
       href="https://www.plk-sa.pl/klienci-i-kontrahenci/warunki-udostepniania-infrastruktury-i-regulaminy/regulamin-sieci/regulamin-sieci-2023/2024"

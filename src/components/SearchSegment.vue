@@ -12,6 +12,7 @@ import TooltipComponent from '@/components/TooltipComponent.vue'
       <input
         id="startStationInput"
         list="start-stations"
+
         type="text"
         placeholder="Stacja początkowa..."
         v-on:input="setStartStation($event.target as HTMLInputElement)"
