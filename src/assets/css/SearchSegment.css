@@ -21,7 +21,7 @@
 }
 .inputs {
   width: 80vw;
-  height: 50px;
+  height: 70px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -83,7 +83,7 @@
     margin-top: 10px;
   }
   .segment #SearchRouteBtn {
-    margin-top: 70px;
+    margin-top: 20px;
   }
   .segment h1 {
     font-size: 30px;
